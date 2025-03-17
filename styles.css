@@ -9,3 +9,7 @@ h1 {
 .about {
     background: honeydew;
 }
+.left { text-align: left; }
+.green { color: green; }
+.wide { width: 30%; }
+.attention { font-weight: bold; }
