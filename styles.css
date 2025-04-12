@@ -14,7 +14,7 @@ h1 {
 .wide { width: 30%; }
 .attention { font-weight: bold; }
 .project img{
-    width: 300px;
+    width: 600px;
     height: 300px;
     margin: 10px;
     border: 2px solid rgb(126, 14, 201); /* choose a color */
