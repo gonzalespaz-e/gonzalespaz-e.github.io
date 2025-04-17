@@ -1,32 +1,66 @@
 body {
-	background: rgb(157, 185, 196);
-	font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-	color: rgb(43, 30, 158);
-	text-align: center;
-}
-.about {
-    background: honeydew;
-}
+    background-color: #e8e3db;
+    color: #3b1f1f;
+    font-family: "Segoe UI", Roboto;
+    line-height: 1.6;
+  }
+  h2, h3 {
+    color: #583507;
+    margin-top: 1.5rem;
+  }
+  h1{
+    color:black;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
 .left { text-align: left; }
 .green { color: green; }
 .wide { width: 30%; }
 .attention { font-weight: bold; }
-.project img{
-    width: 600px;
-    height: 300px;
+a {
+    color: #a4573b;
+  }
+  
+  .project, .project1, .about, .skills, .contact {
+    background-color: #f6f3ee;
+    border-left: 6px solid #5b390d;
+    padding: 12px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+  }
+
+.projects {   display:flex; flex-wrap:wrap;  }  /* condensed to save space */
+
+.project p, .project1 p, h3 {  /* change the appearance of paragraph tags inside .project divs */
+    text-align: center;
+    margin: 15px;
+}
+
+.project1 img{
+    width: 500px;
+    height: 80px;
     margin: 10px;
-    border: 2px solid rgb(126, 14, 201); /* choose a color */
+    border: 2px solid rgb(24, 168, 91); /* choose a color */
     display: block;
     margin: auto;
 }
-a {  /* change the appearance of ALL links */
-    text-decoration: none;
-    color: purple;
+
+.project img{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid rgb(24, 168, 91); /* choose a color */
+    display: block;
+    margin: auto;
 }
-.project p {  /* change the appearance of paragraph tags inside .project divs */
+.center {
     text-align: center;
-    margin: 15px;
+    color: #333;
+  }
+.project, .project1 {
+    width: 40%;
+    margin: 10px;
+    padding: 10px 10px;
+    background: whitesmoke;  /* pick a color */
+    border-radius: 20%;
 }
 
