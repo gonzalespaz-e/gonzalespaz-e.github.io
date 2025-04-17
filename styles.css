@@ -25,7 +25,7 @@ a {
     border-left: 6px solid #5b390d;
     padding: 12px;
     margin-bottom: 24px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
   }
 
 .projects {   display:flex; flex-wrap:wrap;  }  /* condensed to save space */
