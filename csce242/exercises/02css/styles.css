@@ -1,0 +1,36 @@
+/* Structural */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(images/1968-05_Bordeaux_-_Rue_Paul-Bert_2.jpg);
+    background-size: cover;
+}
+
+#content {
+    background-color: beige;
+    width: 70%;
+    margin: auto;
+    /* center on page */
+    border-radius: 20px;
+    border: 1px dotted grey;
+    filter: drop-shadow(8px 8px 10px);
+}
+
+header,
+main,
+footer {
+    padding: 5px;
+}
+
+header,
+footer {
+    background-color: aliceblue;
+}
+
+
+/* Navigation */
+
+
+/* Typography */
+h1 {
+    color: navy;
+}
