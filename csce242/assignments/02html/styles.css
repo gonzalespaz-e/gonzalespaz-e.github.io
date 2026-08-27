@@ -8,7 +8,8 @@ body {
 Typography
 */
 h1,
-h2 {
+h2,
+h3 {
     color: white;
     text-shadow: 3px 3px 2px black;
 
@@ -32,14 +33,23 @@ p {
 }
 
 #images {
-    padding: 15px 90px;
+    padding: 15px 150px;
+    font-size: small;
+    font-style: italic;
 }
 
 table,
 th,
 td,
 tr {
+    table-layout: fixed;
+    background-color: rgba(167, 70, 70, 0.404);
     width: 100%;
     color: white;
     border: 1px solid #cccc
+}
+
+#footer {
+    font-size: small;
+    font-style: italic;
 }
