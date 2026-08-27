@@ -48,10 +48,10 @@ th,
 td,
 tr {
     table-layout: fixed;
-    background-color: rgba(167, 70, 70, 0.404);
+    background-color: rgba(95, 139, 167, 0.404);
     width: 100%;
     color: white;
-    border: 1px solid #cccc
+    border: 1px solid #000000cc;
 }
 
 th,
