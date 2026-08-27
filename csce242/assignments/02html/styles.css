@@ -38,6 +38,11 @@ p {
     font-style: italic;
 }
 
+img {
+    border: 1px solid rgba(255, 255, 255, 0.626);
+    border-radius: 4px;
+}
+
 table,
 th,
 td,
@@ -47,6 +52,11 @@ tr {
     width: 100%;
     color: white;
     border: 1px solid #cccc
+}
+
+th,
+td {
+    padding: 15px;
 }
 
 #footer {
