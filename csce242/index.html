@@ -8,7 +8,7 @@
 
 <body>
     <div id="content">
-        <header>
+        <header id="header">
             <h1>CSCE 242 Portfolio Page</h1>
             <h2>Emmanuel Paz</h2>
             <p>a webdesign class, overviewing both fundamentals of html, css, js as well as core design principles
@@ -16,13 +16,46 @@
             <p>https://github.com/gonzalespaz-e/gonzalespaz-e.github.io/tree/main/csce242</p>
         </header>
         <main>
-            <h2>Assignments</h2>
-            <div id="assignments">
-                <ol>
-                    <li><a href="assignments/01html/index.html">Basic HTML Page</a></li>
-                    <li><a href="assignments/02html/index.html">Basic CSS</a></li>
-                </ol>
+            <h2 id="subheader">Assignments</h2>
+            <div id="assignments" class="columns">
+                <div class="assignment">
+                    <a href="assignments/01html/index.html">Assignment 1 - Basic HTML Page</a>
+                    <img src="images/screenshot1.png" width="300" height="150" />
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris luctus lacus augue.
+                        Duis sed tincidunt sapien.</p>
+                </div>
+                <div class="assignment">
+                    <a href="assignments/02html/index.html">Assignment 2 - Basic CSS</a>
+                    <img src="images/screenshot2.png" width="300" height="150" />
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris luctus lacus augue.
+                        Duis sed tincidunt sapien.</p>
+                </div>
+                <div class="assignment">
+                    <a href="assignments/03html/index.html">Assignment 3 - Flexbox CSS</a>
+                    <img src="images/screenshot3.png" width="300" height="150" />
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                        Mauris luctus lacus augue.
+                        Duis sed tincidunt sapien.</p>
+                </div>
             </div>
+            <div id="projects">
+                <h2 id="projectsheader">Projects</h2>
+                <div id="projects" class="columns">
+                    <div class=assignment>
+                        <a href="/projects/part1/proposal.pdf">Topic Description</a>
+                        <img src="images/screenshot2.png" width="300" height="150" />
+                        <p>lorem ipsum</p>
+                    </div>
+
+
+                </div>
+            </div>
+
         </main>
         <footer>
             <p>&copy; emmanuelpaz</p>
