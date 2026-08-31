@@ -4,35 +4,39 @@
 <head>
     <title>CSCE 242 Portfolio Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="content">
         <header id="header">
             <h1>CSCE 242 Portfolio Page</h1>
-            <h2>Emmanuel Paz</h2>
-            <p>a webdesign class, overviewing both fundamentals of html, css, js as well as core design principles
-                inherent in good website design</p>
-            <p>https://github.com/gonzalespaz-e/gonzalespaz-e.github.io/tree/main/csce242</p>
+            <p id="name">Emmanuel Paz</p>
+
         </header>
         <main>
-            <h2 id="subheader">Assignments</h2>
+            <div class="section-title">
+                <h2>ASSIGNMENTS</h2>
+            </div>
+
             <div id="assignments" class="columns">
                 <div class="assignment">
                     <a href="assignments/01html/index.html">Assignment 1 - Basic HTML Page</a>
-                    <img src="images/screenshot1.png" width="300" height="150" />
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                        Mauris luctus lacus augue.
-                        Duis sed tincidunt sapien.</p>
+                    <img src="images/screenshot1.png" />
+                    <p>A simple website about Gaboon Vipers and their distinctions among other snakes and vipers. Used
+                        to practice html fundamentals and layout principles.</p>
                 </div>
                 <div class="assignment">
                     <a href="assignments/02html/index.html">Assignment 2 - Basic CSS</a>
-                    <img src="images/screenshot2.png" width="300" height="150" />
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                        Mauris luctus lacus augue.
-                        Duis sed tincidunt sapien.</p>
+                    <img src="images/screenshot2.png" />
+                    <p>A simple website about the late 19th century painter Henri Rousseau, detailing his life, unique
+                        contributions as an artist, his reception, and comparisons to some of his contemporaries. Used
+                        to illustrate various ways CSS stylings can be used to transform and display websites. Providing
+                        basis for css + html class, ID, and attribute relationships.</p>
                 </div>
                 <div class="assignment">
                     <a href="assignments/03html/index.html">Assignment 3 - Flexbox CSS</a>
@@ -43,16 +47,16 @@
                         Duis sed tincidunt sapien.</p>
                 </div>
             </div>
-            <div id="projects">
-                <h2 id="projectsheader">Projects</h2>
-                <div id="projects" class="columns">
-                    <div class=assignment>
-                        <a href="/projects/part1/proposal.pdf">Topic Description</a>
-                        <img src="images/screenshot2.png" width="300" height="150" />
-                        <p>lorem ipsum</p>
-                    </div>
 
+            <div class="section-title">
+                <h2>PROJECTS</h2>
+            </div>
 
+            <div id="projects" class="columns">
+                <div class=assignment>
+                    <a href="/projects/part1/proposal.pdf">Topic Description</a>
+                    <img src="images/screenshot2.png" />
+                    <p>lorem ipsum</p>
                 </div>
             </div>
 
