@@ -1,12 +1,12 @@
 /* Structural */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(13, 25, 23);
+    background-color: rgb(27, 52, 40);
     /* fills any leftover space */
 }
 
 #header h1 {
-    margin: 40px;
+    margin: 30px 0 20px;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ a {
     text-align: center;
     display: inline;
     text-decoration: none;
-    color: white;
+    color: #ccd8ff;
     /*color: #f7b448;*/
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
     background-color: #0000008d;
@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-    text-shadow: 0 0 20px #000000;
+    text-shadow: 0 0 8px #393939fe;
 }
 
 /* Typography */
@@ -59,15 +59,15 @@ h1 {
     display: inline;
     text-align: center;
     font-style: italic;
-    padding: 10px 22px;
-    color: rgba(246, 202, 126, 0.855);
+
+    color: rgba(255, 169, 19, 0.855);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.482);
 }
 
 p,
 li {
     color: #eeeeee;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 500;
 }
 
@@ -77,8 +77,8 @@ li {
 
 .assignment {
     /* background: rgba(0, 0, 0, 0.447); */
-    background: linear-gradient(rgba(0, 0, 0, 0.35),
-            rgba(0, 0, 0, 0.063)), url(images/untitled1981.jpeg) fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.47)), url(images/untitled1981.jpeg) fixed;
     margin: 40px;
     padding: 14px;
     text-align: center;
@@ -101,6 +101,8 @@ li {
 .assignment a {
     display: block;
     margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 

@@ -1,3 +1,161 @@
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Structure */
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+#main-header h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#sidebar {
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+/* Navigation */
+
+#sidebar {
+    background-color: cadetblue;
+    color: white;
+}
+
+#sidebar ul li {
+
+    background: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+#main-nav ul,
+#quick-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#main-nav ul {
+    background: black;
+    font-size: large;
+
+}
+
+#main-nav li {
+    padding: 20px;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+}
+
+#main-nav a {
+    color: rgb(252, 247, 247);
+    border-color: white;
+    text-decoration: none;
+}
+
+.title h2 {
+    text-align: center;
+    background: rgb(32, 32, 86);
+    color: whitesmoke;
+    margin: 0;
+}
+
+.title img {
+    display: block;
+    margin: auto;
+    margin-top: none;
+    width: 500px;
+    height: 400px;
+
+}
+
+.idea {
+    margin: 10px;
+    background: teal;
+}
+
+#ideas img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#ideas p,
+#ideas h2 {
+    color: white;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background: blue;
+}
+
+/* 
+    NAACP VP
+    PIT UN Founding and Organizational
+    TA for 247
+    Linkedin + Content Mgmt (orgs + personal)
+    DoO Colorstack
+    TA
+    Capstone 
+    Cinematography + Photography
+    Courses for Premier + Cinematography
+    Exercise
+    Diet
+    Instrument Practice
+    Life Management (car, room, house)
+    Classes
+
+    ADHD & Life Coach
+
+*/
+
+
+/* Typography */
+
+
+
+/* Responsive Design */
+
+@media(min-width: 1100px) {
+    .columns {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
 }
