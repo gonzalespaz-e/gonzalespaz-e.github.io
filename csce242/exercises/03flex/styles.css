@@ -2,16 +2,29 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gray;
+    background-color: rgb(63, 63, 63);
 }
 
 #content {
-    width: 80%;
+    width: 98%;
     margin: auto;
 }
 
+/* Header */
 #main-header {
-    background-color: bisque;
+    background-color: rgb(40, 111, 65);
+    position: relative;
+    padding-top: 3%;
+}
+
+img {
+    max-width: 100%;
+}
+
+#logo {
+    position: absolute;
+    left: 1em;
+    top: 1em;
 }
 
 #sidebar,
@@ -27,6 +40,21 @@ body {
     background-color: blanchedalmond;
 }
 
+
+/* Hero */
+#hero {
+    position: relative;
+}
+
+#hero-description {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.555);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
 /* Navigation */
 
 #main-nav ul,
@@ -36,7 +64,7 @@ body {
 }
 
 #main-nav li {
-    background-color: rgb(126, 119, 173);
+    background-color: rgb(9, 0, 67);
     padding: 5px;
     border-bottom: 1px solid white;
 }
@@ -50,6 +78,7 @@ body {
 #main-header h1 {
     text-align: center;
     padding-top: 20px;
+    color: white;
 }
 
 /* Responsive Design */
