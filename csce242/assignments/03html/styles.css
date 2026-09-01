@@ -3,17 +3,19 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    margin: 0;
+    background: beige;
 }
 
 #content {
-    width: 80%;
+    width: 97%;
     margin: auto;
 }
 
 #main-header h1 {
     text-align: center;
     padding-top: 10px;
+    color: rgb(17, 0, 92);
 }
 
 #sidebar {
@@ -34,7 +36,7 @@ body {
 
 #sidebar ul li {
 
-    background: black;
+    background: rgb(59, 59, 105);
     color: white;
     border-bottom: 1px solid white;
 }
@@ -49,13 +51,13 @@ body {
 
 
 #main-nav ul {
-    background: black;
+    background: rgb(64, 3, 51);
     font-size: large;
 
 }
 
 #main-nav li {
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid white;
     text-align: center;
 
@@ -77,14 +79,13 @@ body {
 .title img {
     display: block;
     margin: auto;
-    margin-top: none;
     width: 500px;
     height: 400px;
 
 }
 
 .idea {
-    margin: 10px;
+    margin-top: 10px;
     background: teal;
 }
 
@@ -98,12 +99,14 @@ body {
 #ideas p,
 #ideas h2 {
     color: white;
+    margin: 5px;
 }
 
 #footer {
     text-align: center;
     padding: 10px;
-    background: blue;
+    background: rgba(93, 1, 85, 0.57);
+    color: aliceblue;
 }
 
 /* 
@@ -132,30 +135,47 @@ body {
 
 
 /* Responsive Design */
-
-@media(min-width: 1100px) {
+@media (min-width: 800px) {
     .columns {
         display: flex;
     }
 
-    #main-nav li {
+    #sidebar {
         flex: 1;
     }
 
-    .one {
-        flex: 1;
-    }
-
-    .two {
-        flex: 2;
-    }
-
-    .three {
-        flex: 3;
-    }
-
-    .four {
+    #info {
         flex: 4;
     }
 
+    #titles {
+        display: flex;
+        padding: 10px;
+    }
+
+    .title {
+        flex: 1;
+    }
+
+    .title img {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    /* Makes each idea: image | text | image */
+    .idea {
+        display: flex;
+    }
+
+    .idea img {
+        width: 20%;
+        height: 200px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .idea-text {
+        flex: 1;
+    }
 }
