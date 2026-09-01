@@ -157,13 +157,24 @@ body {
         flex: 1;
     }
 
+    #titles {
+        align-self: auto;
+        display: flex;
+        gap: 5px;
+    }
+
+    #sidebar {
+
+        align-self: flex-start;
+        height: 300px;
+    }
+
     .title img {
         width: 100%;
         height: auto;
         margin: 10px;
     }
 
-    /* Makes each idea: image | text | image */
     .idea {
         display: flex;
     }
