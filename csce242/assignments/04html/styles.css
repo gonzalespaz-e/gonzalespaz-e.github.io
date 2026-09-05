@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#content {
+    width: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header contents */
+#top-header {
+    display: none;
+}
+
+#main-header {
+    position: sticky;
+    top: 0;
+    padding-left: 25px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    background: black;
+    color: white;
+    margin: 0;
+    width: 100%;
+
+}
+
+#main-header h2 {
+    padding-top: 16px;
+    margin: auto;
+    font-weight: 200;
+}
+
+
+#logo {
+    width: 100%;
+    max-width: 200px;
+    max-height: 100px;
+
+}
+
+#subheader {
+    display: none;
+}
+
+/* Responsive header section*/
+
+@media(min-width: 1100px) {
+
+    /* Top header */
+    #top-header {
+        display: block;
+        background-color: black;
+        margin: 0;
+    }
+
+    #top-header ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 65px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #top-header li {
+        display: inline;
+    }
+
+    #top-header li:not(:last-child)::after {
+        content: " | ";
+        color: white;
+
+    }
+
+    #top-header a {
+        text-decoration: none;
+        color: white;
+        font-size: .6em;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    #toolbar-nav {
+        display: none;
+    }
+
+    /* Center header */
+    #main-header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+
+        padding-left: 70px;
+        padding-top: 14px;
+        padding-bottom: 25px;
+        background: black;
+        color: white;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    #main-header h2 {
+        padding-top: 16px;
+        margin: 0 20px 0 auto;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+
+    #main-header h2 {
+        padding-top: 10px;
+        font-size: 2em;
+        padding-right: 40px;
+    }
+
+
+    #logo {
+        width: 100%;
+        max-width: 260px;
+        max-height: 160px;
+
+    }
+
+    /* Sub header */
+    #subheader {
+        position: sticky;
+        top: 90px;
+        display: block;
+        background: #73000A;
+        padding-right: 80px;
+    }
+
+    #subheader nav {
+        display: flex;
+        width: 100%;
+    }
+
+    #subheader ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        width: fit-content;
+        margin: 0 0 0 auto;
+        padding: 0;
+    }
+
+    #subheader li {
+        display: flex;
+    }
+
+    #subheader a {
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #subheader a .material-symbols-outlined {
+        font-size: 32px;
+    }
+
+    #hero {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+/* End header responsive section */
+
+/* Mobile toolbar */
+
+#toolbar-nav {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+}
+
+#toolbar-nav ul {
+    list-style-type: none;
+}
+
+#toolbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+#toolbar-nav li {
+    display: inline-block;
+}
+
+#toolbar-nav a .material-symbols-outlined {
+    font-size: 32px;
+}
+
+/* Hero */
+
+
+.img-block {
+    display: block;
+    width: 100%;
+}
+
+/* Body content */
+.simple-vignette {
+    /* 1. Size your image container */
+    width: 400px;
+    height: 300px;
+
+    /* 2. Add both the vignette gradient AND your image URL here */
+    background-image:
+        radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.6) 100%),
+        url('your-image.jpg');
+
+    /* 3. Blend them together neatly */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+
+#mission {
+    font-size: 1.3em;
+    margin: 43px;
+    text-align: left;
+    line-height: 2;
+
+}
+
+@media(min-width: 1100px) {
+    #mission {
+        max-width: 790px;
+        margin: 40px auto;
+        padding: 0 20px;
+        line-height: 1.8;
+    }
+}
+
+/* Education Section */
+.float-section {
+    position: relative;
+}
+
+.float-block {
+    position: absolute;
+    background: maroon;
+    bottom: 0px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.float-box-description {}
+
+
+
+/* Footer Links */
+
+#footer-links header {
+    position: relative;
+}
+
+/* Footer icons */
+#footer-social {
+    list-style-type: none;
+    width: fit-content;
+    margin: auto;
+}
+
+#footer-social li {
+    display: inline-block;
+}
+
+#footer-social .material-symbols-outlined {
+    font-size: 48px;
+}
+
+
+
+#footer-links {
+    background: maroon;
+    color: white;
+}
+
+#footer-links a {
+    color: white;
+}
+
+#footer-links-title {
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+#footer-links-title h1,
+#footer-links h2 {
+    margin: 0;
+    padding-left: 10px;
+}
+
+#footer-links h3 {
+    text-transform: uppercase;
+}
+
+#footer-links .columns section {
+    padding: 10px;
+}
+
+#footer-links section ul {
+    column-width: 200px;
+    column-gap: 30px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+#footer-links section a {
+    text-decoration: none;
+}
+
+/* Footer Copy */
+
+#footer-copy {
+    background: black;
+    color: white;
+
+}
+
+#footer-copy a {
+    color: white;
+}
+
+/* Typography */
+
+
+/* columns for all devices */
+.columns-mobile {
+    display: flex;
+}
+
+/* Responsive */
+
+@media(min-width: 1100px) {
+    .columns {
+        display: flex;
+    }
+
+    #footer-links-title {
+        margin: 0;
+    }
+
+    #footer-social {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .five {
+        flex: 5;
+    }
+
+    .six {
+        flex: 6;
+    }
+}

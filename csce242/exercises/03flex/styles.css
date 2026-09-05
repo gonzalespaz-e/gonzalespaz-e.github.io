@@ -92,6 +92,12 @@ img {
     text-decoration: none;
 }
 
+#login-nav {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
 #login-nav a {
     font-size: 1.5em;
 }
