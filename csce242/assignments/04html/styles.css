@@ -401,7 +401,7 @@ body {
         background: #73000A;
         padding: 35px 30px;
         max-width: 790px;
-        bottom: 72%;
+        bottom: 50%;
         left: 4%;
     }
 }
@@ -418,7 +418,7 @@ body {
 
 #institutes-float {
     background: white;
-    margin-bottom: 220px;
+    margin-bottom: 180px;
 }
 
 @media(min-width: 1100px) {
@@ -427,7 +427,7 @@ body {
         background: #73000A;
         padding: 35px 30px;
         max-width: 560px;
-        bottom: -140px;
+        bottom: -40px;
         left: 4%;
         right: auto;
 
@@ -444,6 +444,12 @@ body {
     margin-top: 270px;
     padding-top: 1px;
     background: #e4e4e4;
+}
+
+@media(min-width:1100px) {
+    #top-footer {
+        margin-top: 80px;
+    }
 }
 
 #top-footer h1 {
@@ -592,6 +598,7 @@ body {
 
 #footer-links h3 {
     text-transform: uppercase;
+    line-height: 1.2;
 }
 
 #footer-links .columns section {
@@ -602,16 +609,13 @@ body {
     column-width: 200px;
     column-gap: 30px;
     padding: 0;
+    line-height: 2.3;
 
     list-style-type: none;
 }
 
 #footer-links section a {
     text-decoration: none;
-}
-
-#footer-links section li {
-    line-height: 2;
 }
 
 /* Footer Copy */
@@ -676,29 +680,24 @@ body {
         flex: 2;
         width: auto;
         margin: 0;
-        text-align: left;
     }
 
     #social-section .footer-social h3 {
         text-align: left;
-        margin: 8px 0 28px;
-    }
-
-    #social-section .footer-social button,
-    #social-section .footer-social li {
-        vertical-align: middle;
     }
 
     #social-section .footer-social button {
-        min-width: 257px;
+        min-width: 180px;
         min-height: 54px;
         padding: 15px 20px;
+        position: absolute;
+        left: 65px;
     }
 
     #top-footer-links ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 28px 0;
+        gap: 20px 0;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -717,7 +716,6 @@ body {
         flex: 1;
         width: auto;
         text-align: left;
-        line-height: 1.8;
     }
 
     #footer-links-title {
@@ -741,10 +739,6 @@ body {
 
     #footer-links .columns section {
         padding: 10px 0;
-    }
-
-    #footer-links section li {
-        line-height: 2;
     }
 
     #footer-links .footer-social {
