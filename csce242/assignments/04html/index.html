@@ -17,7 +17,7 @@
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Apply</a></li>
                 <li><a href="#">Give</a></li>
-                <li><a href="#">Gateways</a></li>
+                <li><a href="#">Gateways &rsaquo;</a></li>
             </ul>
         </nav>
     </header>
@@ -40,14 +40,15 @@
     <header id="subheader">
         <nav class="columns">
             <ul>
-                <li><a href="#">Education</li>
-                <li><a href="#">Research</li>
-                <li><a href="#">Centers and Institutes</li>
-                <li><a href="#">About</li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Centers and Institutes</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#"><span class="material-symbols-outlined">
                             manage_search
                         </span></a></li>
             </ul>
+        </nav>
     </header>
 
     <div id="content">
@@ -60,21 +61,123 @@
                     compassionate care for all.
                 </h3>
             </div>
-            <div class="float-section">
-                <img class="img-block" src="images/home_educationtextbox3.jpg" />
-                <div class="float-block">
 
-                    <div class="float-block-description">
-                        <h3>Education</h3>
-                        <p>Hands-on learning, exceptional clinical partners, innovative curriculum and cutting-edge
-                            technology prepare our learners to be skilled and compassionate professionals in communities
-                            near and far.</p>
-                        <button>test</button>
+
+            <!-- Making block section for image + foreground box + section below for box to overlap-->
+            <div id="education-float" class="float-section">
+                <img id="education-image" class="img-block" src="images/home_educationtextbox3.jpg" />
+                <div class="float-block">
+                    <h1>Education</h1>
+                    <p>Hands-on learning, exceptional clinical partners, innovative curriculum and cutting-edge
+                        technology prepare our learners to be skilled and compassionate professionals in communities
+                        near and far.</p>
+                    <button>Our Programs &raquo;</button>
+                </div>
+
+                <div id="edu-below-content">
+                    <img src="images/ladywbluesuit.png" />
+                    <h3 id="quote">"The School of Medicine is a home of mentors, an undiscovered gem, a diamond in the
+                        rough, a small program that has allowed me to fly as high as I desire to. The School of Medicine
+                        is unlimited opportunities, just waiting for someone to work hard and take them. The School of
+                        Medicine is opportunity."</h3>
+                    <p>Sarah Hall Kiriluk, MD, Class of 2025 MD Program Graduate
+                    </p>
+                </div>
+            </div>
+
+            <div id="research-float" class="float-section">
+                <img id="education-image" class="img-block" src="images/home_researchtextbox.jpg" />
+                <div class="float-block">
+                    <h1>Research</h1>
+                    <p>Access to the latest cutting-edge technologies, support from our University and extensive
+                        opportunities to collaborate allow our research team to impact our state and beyond.</p>
+                    <button>Explore your opportunities &raquo;</button>
+                </div>
+
+                <!-- Research section -->
+                <div id="research-below-content" class="columns">
+                    <div id="health" class="tri-box">
+                        <img src="images/home_newbuilding_card.jpg" />
+                        <h3>Tour the new Health Sciences campus &raquo;</h3>
+                        <p>Learn more about the Health Sciences Campus, our new home in the BullStreet District.</p>
+                    </div>
+
+                    <div id="news" class="tri-box">
+                        <img src="images/home_news_card.jpg" />
+                        <h3>News &raquo;</h3>
+                        <p>The latest updates from the Floyd School of Medicine.</p>
+                    </div>
+
+                    <div id="directory" class="tri-box">
+                        <img src="images/home_directory_card2.jpg" />
+                        <h3>Directory &raquo;</h3>
+                        <p>Meet the faculty and staff who pwoer the Floyd School of Medicine.</p>
                     </div>
                 </div>
             </div>
 
 
+            <div id="institutes-float" class="float-section">
+                <img id="med-image" class="img-block" src="images/img4.jpg" />
+                <div class="float-block">
+                    <h1>Centers and Institutes</h1>
+                    <p>Our centers and institutes are just one way we're working to advance medical education and
+                        improve patient care in South Carolina.</p>
+                    <button>Browse our Options &raquo;</button>
+                </div>
+
+            </div>
+
+
+
+            <footer id="top-footer">
+                <h1>Stay Connected</h1>
+                <p>Discover more ways to get involved with our school</p>
+                <div id="button-set-1" class="columns">
+                    <button>Give to medicine &raquo;</button>
+                    <button>Alumni &raquo;</button>
+                    <button>Student Resources &raquo;</button>
+                </div>
+                <div id="social-section" class="columns">
+                    <div class="footer-social">
+                        <h3>Floyd School of Medicine &raquo;</h3>
+                        <button>My School of Medicine</button>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span></a></li>
+                    </div>
+
+                    <div id="top-footer-links">
+                        <ul>
+                            <li><a href="#">About us &raquo;</a></li>
+                            <li><a href="#">Give &raquo;</a></li>
+                            <li><a href="#">Calendar &raquo;</a></li>
+                            <li><a href="#">Directory &raquo;</a></li>
+                            <li><a href="#">Contact Us &raquo;</a></li>
+                            <li><a href="#">History &raquo;</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="address">
+                        <a href="#">Floyd School of Medicine Medical Education Campus</a>
+                        <p>6311 Garners Ferry Road</p>
+                        <p>Columbia, SC 29209</p>
+                    </div>
+                </div>
+
+            </footer>
         </main>
 
 
@@ -83,14 +186,14 @@
             <header>
                 <div id="footer-links-title" class="columns-mobile">
                     <div>
-                        <img id="logo" src="images/ss3.png" />
+                        <img id="logo" src="images/usc_logo_horizontal_RGB_K_rev.png" />
                     </div>
                     <div>
                         <h2>University of</h2>
                         <h1>South Carolina</h1>
                     </div>
                 </div>
-                <ul id="footer-social">
+                <ul class="footer-social">
                     <li><a href="#"><span class="material-symbols-outlined">
                                 fire_truck
                             </span></a></li>
@@ -107,34 +210,63 @@
                     <h3>Colleges and Schools</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
+                        <li><a href="#">Arts and Sciences</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Engineering and Computing</a></li>
+                        <li><a href="#">The Graduate School</a></li>
+                        <li><a href="#">Hospitality, Retail, and Sport Management</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Public Health</a></li>
+                        <li><a href="#">Social Work</a></li>
+                        <li><a href="#">South Caorlina Honors College</a></li>
+                        <li><a href="#">Palmetto College</a></li>
+                        <li><a href="#">Information and Communications</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Medicine</a></li>
                     </ul>
                 </section>
                 <section class="two">
                     <h3>Offices and Divisions</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
+                        <li><a href="#">Employment</a></li>
+                        <li><a href="#">Undergraduate Admissions</a></li>
+                        <li><a href="#">Financial Aid and Scholarships</a></li>
+                        <li><a href="#">Veterans and Military Services</a></li>
+                        <li><a href="#">DIsability Resources</a></li>
+                        <li><a href="#">Access and Opportunity</a></li>
+                        <li><a href="#">Human Resources</a></li>
+                        <li><a href="#">Law Enforcement and Safety</a></li>
+                        <li><a href="#">University Libraries</a></li>
+                        <li><a href="#">All Offices and Division</a></li>
                     </ul>
                 </section>
                 <section class="one">
                     <h3>Tools</h3>
                     <hr>
                     <ul>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
-                        <li><a href="#">asdfsdad</a></li>
+                        <li><a href="#">Carolina Alert</a></li>
+                        <li><a href="#">Campus Email</a></li>
+                        <li><a href="#">my.sc.edu</a></li>
+                        <li><a href="#">Blackboard</a></li>
+                        <li><a href="#">Campus Safety and Wellness</a></li>
+                        <li><a href="#">PeopleSoft Finance</a></li>
                     </ul>
                 </section>
             </div>
 
         </footer>
         <footer id="footer-copy">
-            <p>test</p>
+            <ul>
+                <li><a href="#">University of South Carolina</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Student Consumer Information</a></li>
+                <li><a href="#">Transparency Initiative</a></li>
+                <li><a href="#">Civil Rights and Title IX</a></li>
+                <li><a href="#">Digital Accessibility</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </footer>
     </div>
 </body>

@@ -212,30 +212,15 @@ body {
     width: 100%;
 }
 
+
+
 /* Body content */
-.simple-vignette {
-    /* 1. Size your image container */
-    width: 400px;
-    height: 300px;
-
-    /* 2. Add both the vignette gradient AND your image URL here */
-    background-image:
-        radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.6) 100%),
-        url('your-image.jpg');
-
-    /* 3. Blend them together neatly */
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-}
-
 
 #mission {
     font-size: 1.3em;
-    margin: 43px;
+    margin: 50px;
     text-align: left;
     line-height: 2;
-
 }
 
 @media(min-width: 1100px) {
@@ -245,7 +230,9 @@ body {
         padding: 0 20px;
         line-height: 1.8;
     }
+
 }
+
 
 /* Education Section */
 .float-section {
@@ -254,41 +241,328 @@ body {
 
 .float-block {
     position: absolute;
-    background: maroon;
-    bottom: 0px;
-    margin: 20px;
-    padding: 20px;
+    background: #73000A;
+    bottom: 60%;
+    margin: 8px;
+    padding: 35px 30px;
 }
 
-.float-box-description {}
+.float-block h1 {
+    margin: 0 0 30px;
+    color: white;
+    font-size: 2.2em;
+}
+
+.float-block p {
+    margin: 0 0 35px;
+    color: white;
+    line-height: 1.8;
+}
+
+.float-block button {
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 16px 10px;
+
+}
+
+#edu-below-content {
+    padding-top: 180px;
+    background: white;
+}
+
+#edu-below-content img {
+    position: relative;
+    left: 190px;
+    background: white;
+    width: 47%;
+    border-radius: 60%;
+    display: inline-block;
+
+}
+
+#edu-below-content h3 {
+    margin: 20px 70px 20px;
+    font-family: serif;
+    color: #73000A;
+    line-height: 2;
+    font-weight: 510;
+    font-size: 1.3em;
+    display: inline-block;
+
+}
+
+#edu-below-content p {
+    margin-left: 72px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.767);
+    display: inline-block;
+
+}
+
+@media(min-width: 1100px) {
+    #edu-below-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 100px;
+
+    }
+
+    #edu-below-content img {
+        position: relative;
+        left: 50px;
+        width: 20%;
+    }
+
+    #edu-below-content h3 {
+        width: 50%;
+        margin: 20px 200px 0;
+    }
+
+    #edu-below-content p {
+        width: 50%;
+        margin: 0 40px 40px 50%;
+    }
+
+    #education-image {
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .float-block {
+        position: absolute;
+        background: #73000A;
+        margin: 8px;
+        padding: 35px 30px;
+    }
+
+    .float-block p {
+        margin: 0 0 35px;
+        color: white;
+        line-height: 1.8;
+        padding-right: 50px;
+    }
+
+    #education-float .float-block {
+        bottom: 38%;
+        left: 50%;
+        margin-right: 60px;
+    }
+}
 
 
+.tri-box {
+    width: 100%;
+}
+
+.tri-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#research-below-content h3 {
+    color: #73000A;
+    font-size: 1.5em;
+}
+
+#research-float .float-block {
+    position: absolute;
+    background: #73000A;
+    padding: 35px 30px;
+    max-width: 790px;
+    bottom: 82%;
+}
+
+#research-below-content {
+    background: white;
+    gap: 40px;
+    padding: 100px 30px;
+    padding-top: 300px;
+}
+
+@media(min-width: 1100px) {
+    #research-below-content {
+        background: white;
+        gap: 40px;
+        padding: 100px 130px 50px 130px;
+    }
+
+    #research-float .float-block {
+        position: absolute;
+        background: #73000A;
+        padding: 35px 30px;
+        max-width: 790px;
+        bottom: 72%;
+        left: 4%;
+    }
+}
+
+
+#institutes-float .float-block {
+    position: absolute;
+    background: #73000A;
+    padding: 35px 30px;
+    left: 4%;
+    right: 4%;
+    bottom: -200px;
+}
+
+#institutes-float {
+    background: white;
+    margin-bottom: 220px;
+}
+
+@media(min-width: 1100px) {
+    #institutes-float .float-block {
+        position: absolute;
+        background: #73000A;
+        padding: 35px 30px;
+        max-width: 560px;
+        bottom: -140px;
+        left: 4%;
+        right: auto;
+
+    }
+
+    #institutes-float {
+        background: white;
+        margin-bottom: 0px;
+    }
+}
+
+
+#top-footer {
+    margin-top: 270px;
+    padding-top: 1px;
+    background: #e4e4e4;
+}
+
+#top-footer h1 {
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 2.7em;
+    color: #73000A;
+}
+
+#top-footer p {
+    text-align: center;
+
+}
+
+#top-footer a {
+    color: #73000A;
+}
+
+#top-footer button {
+    background: #73000A;
+    color: white;
+    border: 1px solid white;
+}
+
+#button-set-1 button {
+    min-height: 52px;
+    padding: 14px 28px;
+}
+
+#social-section .footer-social button {
+    background: black;
+    min-height: 40px;
+    padding: 10px 14px;
+}
+
+#button-set-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+#top-footer h3 {
+    color: #73000A;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px 40px;
+}
+
+#social-section .footer-social {
+    text-align: center;
+}
+
+#top-footer-links {
+    width: 100%;
+}
+
+
+#top-footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#top-footer-links li {
+    width: 33.333%;
+}
+
+#top-footer-links a {
+    text-decoration: none;
+}
+
+#address {
+    width: 100%;
+    text-align: center;
+}
 
 /* Footer Links */
+#footer-links-title img {
+    margin-top: 20px;
+}
 
 #footer-links header {
     position: relative;
 }
 
 /* Footer icons */
-#footer-social {
+.footer-social {
     list-style-type: none;
     width: fit-content;
     margin: auto;
 }
 
-#footer-social li {
+.footer-social li {
     display: inline-block;
 }
 
-#footer-social .material-symbols-outlined {
+.footer-social .material-symbols-outlined {
     font-size: 48px;
+    color: #73000A;
 }
 
 
 
 #footer-links {
-    background: maroon;
+    background: #73000A;
     color: white;
 }
 
@@ -296,10 +570,18 @@ body {
     color: white;
 }
 
+#footer-links .footer-social .material-symbols-outlined {
+    color: white;
+}
+
 #footer-links-title {
     width: fit-content;
     margin: auto;
     align-items: center;
+}
+
+#footer-links-title>div:nth-child(2) {
+    display: none;
 }
 
 #footer-links-title h1,
@@ -328,16 +610,32 @@ body {
     text-decoration: none;
 }
 
+#footer-links section li {
+    line-height: 2;
+}
+
 /* Footer Copy */
 
 #footer-copy {
     background: black;
     color: white;
+    border-top: 1px solid white;
 
 }
 
 #footer-copy a {
     color: white;
+}
+
+#footer-copy ul {
+    margin: 0;
+    padding: 12px 6%;
+    list-style: none;
+}
+
+#footer-copy li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 /* Typography */
@@ -355,11 +653,101 @@ body {
         display: flex;
     }
 
+    #button-set-1 button {
+        flex: 0 1 auto;
+        min-height: 70px;
+        padding: 22px 40px;
+    }
+
+    #button-set-1 {
+        gap: 80px;
+    }
+
+    #social-section {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: start;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    #social-section .footer-social {
+        flex: 2;
+        width: auto;
+        margin: 0;
+        text-align: left;
+    }
+
+    #social-section .footer-social h3 {
+        text-align: left;
+        margin: 8px 0 28px;
+    }
+
+    #social-section .footer-social button,
+    #social-section .footer-social li {
+        vertical-align: middle;
+    }
+
+    #social-section .footer-social button {
+        min-width: 257px;
+        min-height: 54px;
+        padding: 15px 20px;
+    }
+
+    #top-footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #top-footer-links {
+        flex: 1.2;
+        width: auto;
+    }
+
+    #top-footer-links li {
+        width: 50%;
+    }
+
+    #address {
+        flex: 1;
+        width: auto;
+        text-align: left;
+        line-height: 1.8;
+    }
+
     #footer-links-title {
         margin: 0;
     }
 
-    #footer-social {
+    #footer-links-title #logo {
+        width: 420px;
+        max-width: 45vw;
+        max-height: none;
+    }
+
+    #footer-links>header {
+        padding: 20px 5%;
+    }
+
+    #footer-links>.columns {
+        padding: 0 5% 50px;
+        gap: 40px;
+    }
+
+    #footer-links .columns section {
+        padding: 10px 0;
+    }
+
+    #footer-links section li {
+        line-height: 2;
+    }
+
+    #footer-links .footer-social {
         position: absolute;
         top: 5px;
         right: 5px;
@@ -387,5 +775,15 @@ body {
 
     .six {
         flex: 6;
+    }
+
+    #footer-copy ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer-copy li {
+        margin-right: 0;
     }
 }
