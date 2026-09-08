@@ -627,8 +627,15 @@ body {
 
 }
 
+#footer-copy li:not(:last-child)::after {
+    content: " | ";
+    color: white;
+
+}
+
 #footer-copy a {
     color: white;
+    text-decoration: none;
 }
 
 #footer-copy ul {
