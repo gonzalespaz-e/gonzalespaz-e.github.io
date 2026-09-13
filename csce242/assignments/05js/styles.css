@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+#content {
+    background: rgb(249, 243, 234);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content h1,
+#content h2 {
+    margin-top: 0px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+#content h2 {
+    color: rgb(142, 42, 144);
+}
+
+/* Cards section */
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 10px 20px;
+
+}
+
+#cards img {
+    display: block;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 60%;
+    margin: auto;
+}
+
+.js-card {
+    padding: 30px;
+    background: rgba(0, 56, 25, 0.735);
+    color: white;
+    position: relative;
+    border: solid 2px rgb(54, 40, 104);
+}
+
+.js-card h3 {
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#drinks {
+    padding-right: 30px;
+}
+
+/* Bubble section logic */
+#speech-section {
+    display: inline-block;
+
+}
+
+#bubble {
+    background: white;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    max-width: 100px;
+    margin: auto;
+}
+
+#tail {
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid white;
+    margin: auto;
+}
+
+/* Emoji p */
+#sticker-emoji {
+    position: absolute;
+    bottom: 58%;
+    left: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#footer p {
+    text-align: center;
+}
+
+/* Responsive Section */
+@media (min-width: 1100px) {
+    .columns {
+        display: flex;
+    }
+
+    #cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .js-card {
+        flex: 0 1 25%;
+    }
+}

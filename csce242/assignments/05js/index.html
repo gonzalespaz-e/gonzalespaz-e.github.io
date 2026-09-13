@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Intro to JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="content">
+        <header>
+            <h1>Assignment 7</h1>
+            <h2>Introduction to Javascript</h2>
+        </header>
+        <main>
+            <div id="cards" class="columns">
+
+                <section id="speech-section" class="js-card">
+                    <h3>Speech</h3>
+                    <div id="bubble" class="hidden">Yo ! :D</div>
+                    <div id="tail" class="hidden"></div>
+                </section>
+
+                <section class="js-card">
+                    <h3>Beverage</h3>
+
+                    <label for="drinks">Pick your morning beverage: </label>
+                    <select name="drinks" id="drinks">
+                        <option>Liquor</option>
+                        <option>OJ</option>
+                        <option>Wine</option>
+                        <option>Water</option>
+
+                    </select>
+                    <p id="drink-selection"></p>
+                </section>
+
+                <section class="js-card">
+                    <h3>Add a Sticker</h3>
+                    <img id="card-img" src="images/Georges_Seurat_parade_de_cirque1887.jpg" />
+                    <p id="sticker-emoji" class="hidden">🤯</p>
+                </section>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>@emmanuelpaz.com</p>
+        </footer>
+    </div>
+    <script src="scripts/05.js"></script>
+</body>
+
+</html>
