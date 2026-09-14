@@ -30,14 +30,14 @@ a {
     text-align: center;
     display: inline;
     text-decoration: none;
-    color: #ffd166;
+    color: rgb(165, 205, 156);
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
-    background-color: #0000008d;
+    background-color: #000000ae;
     font-weight: bold;
 }
 
 a:hover {
-    color: #ffe29a;
+    color: #d7e2d3;
     text-shadow: 0 0 4px #3b7b5fd0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     transform: translateY(-3px);
@@ -107,13 +107,15 @@ li {
 }
 
 .portfolio-card a {
-    display: block;
+    display: inline-block;
+    max-width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 40px 10px;
 }
 
 .portfolio-card a.image-link {
+    display: block;
     margin-bottom: 20px;
     padding: 0;
     background: none;
