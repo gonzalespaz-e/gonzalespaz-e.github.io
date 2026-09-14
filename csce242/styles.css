@@ -30,14 +30,14 @@ a {
     text-align: center;
     display: inline;
     text-decoration: none;
-    color: #ccd8ff;
-    /*color: #f7b448;*/
+    color: #ffd166;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
     background-color: #0000008d;
     font-weight: bold;
 }
 
 a:hover {
+    color: #ffe29a;
     text-shadow: 0 0 4px #3b7b5fd0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     transform: translateY(-3px);
@@ -96,6 +96,7 @@ li {
     height: 150px;
     max-width: 100%;
     object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
 
 }
 
