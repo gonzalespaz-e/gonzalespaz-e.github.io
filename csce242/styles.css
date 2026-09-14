@@ -38,7 +38,10 @@ a {
 }
 
 a:hover {
-    text-shadow: 0 0 8px #393939fe;
+    text-shadow: 0 0 4px #3b7b5fd0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-3px);
+
 }
 
 /* Typography */
@@ -117,13 +120,11 @@ li {
 }
 
 .portfolio-card a.image-link img {
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-card a.image-link:hover img {
     transform: translateY(-3px);
-    box-shadow: 0 0 12px rgba(255, 169, 19, 0.7), 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 
