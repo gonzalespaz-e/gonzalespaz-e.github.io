@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCE 242 Portfolio Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,99 +21,111 @@
 
         </header>
         <main>
-            <div class="section-title">
-                <h2>ASSIGNMENTS</h2>
-            </div>
-
-            <div id="assignments" class="columns">
-                <div class="assignment">
-                    <a href="assignments/01html/index.html">Assignment 1 - Basic HTML Page</a>
-                    <a class="image-link" href="assignments/01html/index.html">
-                        <img src="images/screenshot1.png" />
-                    </a>
-                    <p>A simple website about Gaboon Vipers and their distinctions among other snakes and vipers. Used
-                        to practice html fundamentals and layout principles.</p>
-                </div>
-                <div class="assignment">
-                    <a href="assignments/02html/index.html">Assignment 2 - Basic CSS</a>
-                    <a class="image-link" href="assignments/02html/index.html">
-                        <img src="images/screenshot2.png" />
-                    </a>
-                    <p>A simple website about the late 19th century painter Henri Rousseau, detailing his life, unique
-                        contributions as an artist, his reception, and comparisons to some of his contemporaries. Used
-                        to illustrate various ways CSS stylings can be used to transform and display websites. Providing
-                        basis for css + html class, ID, and attribute relationships.</p>
-                </div>
-                <div class="assignment">
-                    <a href="assignments/03html/index.html">Assignment 3 - Flexbox CSS</a>
-                    <a class="image-link" href="assignments/03html/index.html">
-                        <img src="images/screenshot4.png" width="300" height="150" />
-                    </a>
-                    <p>Assignment where we experiment in designing mobile-first responsive sites that adapt to page
-                        widths. Also conceptually cover distinguishing between when to use IDS vs classes and the
-                        concept of nesting flex attributes among these classes.</p>
+            <section class="portfolio-section">
+                <div class="section-title">
+                    <h2>ASSIGNMENTS</h2>
                 </div>
 
-                <div class="assignment">
-                    <a href="assignments/04html/index.html">Assignment 4 - CSS Recreation</a>
-                    <a class="image-link" href="assignments/04html/index.html">
-                        <img src="images/screenshot6.png" width="300" height="150" />
-                    </a>
-                    <p>Assignment where we're tasked with recreating largely the entire structure of USC'S Floyd School
-                        of Medicine Webpage. this includes flexbox, columnization, aligning buttons, divs, sections,
-                        footers etc. Ensuring all designs are inherintely responsive for mobile and desktop while also
-                        looking to the base site for margin and styling guidelines.</p>
-                </div>
+                <div id="assignments" class="columns">
+                    <article class="portfolio-card">
+                        <a href="assignments/01html/index.html">Assignment 1 - Basic HTML Page</a>
+                        <a class="image-link" href="assignments/01html/index.html">
+                            <img src="images/screenshot1.png" alt="Preview of Assignment 1">
+                        </a>
+                        <p>A simple website about Gaboon Vipers and their distinctions among other snakes and vipers.
+                            Used
+                            to practice html fundamentals and layout principles.</p>
+                    </article>
+                    <article class="portfolio-card">
+                        <a href="assignments/02html/index.html">Assignment 2 - Basic CSS</a>
+                        <a class="image-link" href="assignments/02html/index.html">
+                            <img src="images/screenshot2.png" alt="Preview of Assignment 2">
+                        </a>
+                        <p>A simple website about the late 19th century painter Henri Rousseau, detailing his life,
+                            unique
+                            contributions as an artist, his reception, and comparisons to some of his contemporaries.
+                            Used
+                            to illustrate various ways CSS stylings can be used to transform and display websites.
+                            Providing
+                            basis for css + html class, ID, and attribute relationships.</p>
+                    </article>
+                    <article class="portfolio-card">
+                        <a href="assignments/03html/index.html">Assignment 3 - Flexbox CSS</a>
+                        <a class="image-link" href="assignments/03html/index.html">
+                            <img src="images/screenshot4.png" width="300" height="150" alt="Preview of Assignment 3">
+                        </a>
+                        <p>Assignment where we experiment in designing mobile-first responsive sites that adapt to page
+                            widths. Also conceptually cover distinguishing between when to use IDS vs classes and the
+                            concept of nesting flex attributes among these classes.</p>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <a href="assignments/04html/index.html">Assignment 4 - CSS Recreation</a>
+                        <a class="image-link" href="assignments/04html/index.html">
+                            <img src="images/screenshot6.png" width="300" height="150" alt="Preview of Assignment 4">
+                        </a>
+                        <p>Assignment where we're tasked with recreating largely the entire structure of USC'S Floyd
+                            School
+                            of Medicine Webpage. this includes flexbox, columnization, aligning buttons, divs, sections,
+                            footers etc. Ensuring all designs are inherintely responsive for mobile and desktop while
+                            also
+                            looking to the base site for margin and styling guidelines.</p>
+                    </article>
 
 
 
-                <div class="assignment">
-                    <a href="assignments/05js/index.html">Assignment 5 - JS Functionality</a>
-                    <a class="image-link" href="assignments/05js/index.html">
-                        <img src="images/screenshot7.png" width="300" height="150" />
-                    </a>
-                    <p>Assignment used to showcase simple JavaScript functions and their interaction with html and css
-                        elements. Showcasing onclick logic but also id routing and respective element class relationship
-                        toggles.</p>
-                </div>
-            </div>
+                    <article class="portfolio-card">
+                        <a href="assignments/05js/index.html">Assignment 5 - JS Functionality</a>
+                        <a class="image-link" href="assignments/05js/index.html">
+                            <img src="images/screenshot7.png" width="300" height="150" alt="Preview of Assignment 5">
+                        </a>
+                        <p>Assignment used to showcase simple JavaScript functions and their interaction with html and
+                            css
+                            elements. Showcasing onclick logic but also id routing and respective element class
+                            relationship
+                            toggles.</p>
+                    </article>
+            </section>
 
-            <div class="section-title">
-                <h2>PROJECTS</h2>
-            </div>
+            <section class="portfolio-section">
+                <div class="section-title">
+                    <h2>PROJECTS</h2>
+                </div>
 
-            <div id="projects" class="columns">
-                <div class=assignment>
-                    <a href="/projects/part1/proposal.pdf">Topic Description</a>
-                    <a class="image-link" href="/projects/part1/proposal.pdf">
-                        <img src="images/screenshot5.png" />
-                    </a>
-                    <p>Ward One was a predominantly Black, working-class neighborhood in downtown Columbia
-                        located immediately west of what was then the University of South Carolina campus.
-                        Throughout the mid-twentieth century, much of the neighborhood was acquired and
-                        demolished through urban renewal and University expansion. Today, much of the former
-                        neighborhood is occupied by University and commercial development, including the
-                        Carolina Coliseum, Darla Moore School of Business, and Koger Center for the Arts.</p>
+                <div id="projects" class="columns">
+                    <article class="portfolio-card">
+                        <a href="projects/part1/proposal.pdf">Topic Description</a>
+                        <a class="image-link" href="projects/part1/proposal.pdf">
+                            <img src="images/screenshot5.png" alt="Preview of the Ward One topic description">
+                        </a>
+                        <p>Ward One was a predominantly Black, working-class neighborhood in downtown Columbia
+                            located immediately west of what was then the University of South Carolina campus.
+                            Throughout the mid-twentieth century, much of the neighborhood was acquired and
+                            demolished through urban renewal and University expansion. Today, much of the former
+                            neighborhood is occupied by University and commercial development, including the
+                            Carolina Coliseum, Darla Moore School of Business, and Koger Center for the Arts.</p>
+                    </article>
+                    <article class="portfolio-card">
+                        <a href="projects/Ward One.pdf">Ward One Site Main Page Wireframe</a>
+                        <a class="image-link" href="projects/Ward One.pdf">
+                            <img src="images/ward1wireframe.png" alt="Preview of the Ward One main page wireframe">
+                        </a>
+                        <p>A demo iteration of the design of the Ward One Columbia website including grouped figma
+                            sections,
+                            classes, etc.</p>
+                        <a href="https://www.youtube.com/watch?v=LvfQuxHudxA">Link to figma walkthrough</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <a href="projects/WardOneFinal.pdf">Ward One Final Site Complete Wireframes</a>
+                        <a class="image-link" href="projects/WardOneFinal.pdf">
+                            <img src="images/screenshot8.png" alt="Preview of the completed Ward One wireframes">
+                        </a>
+                        <p>Final wireframes for complete mapped out Ward One site recreation.</p>
+                        <p><a href="https://wardone.wixsite.com/wardone">Link to original site</a></p>
+                        <a href="https://www.youtube.com/watch?v=jdkUxaCA">Link to figma walkthrough</a>
+                    </article>
                 </div>
-                <div class=assignment>
-                    <a href="/projects/Ward One.pdf">Ward One Site Main Page Wireframe</a>
-                    <a class="image-link" href="/projects/Ward One.pdf">
-                        <img src="images/ward1wireframe.png" />
-                    </a>
-                    <p>A demo iteration of the design of the Ward One Columbia website including grouped figma sections,
-                        classes, etc.</p>
-                    <a href="https://www.youtube.com/watch?v=LvfQuxHudxA">Link to figma walkthrough</a>
-                </div>
-                <div class=assignment>
-                    <a href="/projects/Ward One.pdf">Ward One Final Site Complete Wireframes</a>
-                    <a class="image-link" href="/projects/WardOneFial.pdf">
-                        <img src="images/screenshot8.png" />
-                    </a>
-                    <p>Final wireframes for complete mapped out Ward One site recreation.</p>
-                    <p><a href="https://wardone.wixsite.com/wardone">Link to original site</a></p>
-                    <a href="https://www.youtub.com/watch?v=jdkUxaCA">Link to figma walkthrough</a>
-                </div>
-            </div>
+            </section>
 
         </main>
         <footer>
