@@ -143,6 +143,10 @@ h3 {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
