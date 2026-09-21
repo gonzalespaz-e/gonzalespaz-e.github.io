@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- use this character set so i can easily utilize up and down triangles in my js-->
     <meta charset="UTF-8">
     <title>Assignment 6</title>
     <link rel="stylesheet" href="styles.css">
@@ -17,6 +18,7 @@
         <main>
             <div>
                 <p id="up-arrow">▼</p>
+                <!-- independent ids to later reference in js to toggle, and hidden class for mobile to hide by default-->
                 <div id="exercises" class="columns hidden">
                     <ul>
                         <li><a href="#" id="nav-exercise1">Exercise 1</a></li>
@@ -32,6 +34,7 @@
                     <p id="percentage-p"></p>
                     <p id="deduction-mess"></p>
                 </div>
+                <!-- second js function,hidden by default unless toggled-->
                 <div id="exercise2-content" class="hidden">
                     <h3>End of Semester Counter</h3>
                     <p id="day-count"></p>

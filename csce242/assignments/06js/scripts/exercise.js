@@ -27,7 +27,7 @@ document.getElementById("class-missed").onchange = (e) => {
     }
 };
 
-// Exercise 1 / Exercise 2 nav toggling
+// Exercise 1 and Exercise 2 nav toggling
 document.getElementById("nav-exercise1").onclick = (e) => {
     e.preventDefault();
     document.getElementById("exercise1-content").classList.remove("hidden");
@@ -40,6 +40,7 @@ document.getElementById("nav-exercise2").onclick = (e) => {
     document.getElementById("exercise1-content").classList.add("hidden");
 };
 
+// mobile nav visibility handling 
 document.getElementById("up-arrow").onclick = () => {
     const arrow = document.getElementById("up-arrow");
     arrow.innerHTML = arrow.innerHTML === "▼" ? "▲" : "▼";
