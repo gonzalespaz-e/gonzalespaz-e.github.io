@@ -1,0 +1,251 @@
+:root {
+    --color-navy: #1B222E;
+    --color-navy-light: #35435a;
+    --color-white: white;
+    --color-off-white: #fbf9f9;
+    --color-overlay-dark: rgba(9, 9, 9, 0.654);
+    --color-purple: #3b0a45;
+    --color-dark-navy: #0e0e1a;
+    --color-green: #2e5339;
+    --color-yellow: #f6d381;
+    --color-near-black: #111;
+    --color-gray-light: #d9d9d9;
+    --color-gray-dark: #262626;
+}
+
+body {
+    margin: 0;
+}
+
+#content {
+    margin: auto;
+}
+
+#header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    background: var(--color-navy);
+    color: var(--color-white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+#header-nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1em;
+    margin: 40px;
+}
+
+#header-nav li {
+    list-style-type: none;
+    padding: 20px;
+    border-bottom: var(--color-white) solid 1px;
+    background: var(--color-navy-light);
+}
+
+@media(min-width: 1100px) {
+    .columns {
+        display: flex;
+    }
+
+    #main-header {
+        text-align: left;
+    }
+
+    #main-header h1 {
+        margin-left: 40px;
+    }
+
+    #header-nav li {
+        display: inline;
+        border-bottom: none;
+        background-color: var(--color-navy);
+    }
+
+    #main-header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header-nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0 40px 0 0;
+    }
+
+}
+
+#hero {
+    position: relative;
+    height: 400px;
+    background: url("images/img1.jpg") center / cover no-repeat;
+
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.hero-arrow-left {
+    left: 20px;
+}
+
+.hero-arrow-right {
+    right: 20px;
+}
+
+.hero-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background: var(--color-overlay-dark);
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+
+.hero-caption p {
+    margin: 0;
+    max-width: 900px;
+    color: var(--color-off-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+#hero-bar {
+    height: 12px;
+    background: var(--color-purple);
+}
+
+#discover-section {
+    background: var(--color-purple);
+    color: var(--color-white);
+    padding: 60px 40px;
+}
+
+#discover-section .columns {
+    align-items: center;
+    gap: 40px;
+}
+
+#discover-section img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+#discover-section h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#then-vs-today {
+    background: var(--color-dark-navy);
+    color: var(--color-white);
+    padding: 60px 40px;
+}
+
+#then-vs-today h2 {
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2em;
+    line-height: 1.4;
+}
+
+#then-vs-today .highlight {
+    background: var(--color-green);
+    padding: 5px 10px;
+}
+
+.then-vs-today-cards {
+    gap: 30px;
+}
+
+.then-vs-today-cards .card {
+    position: relative;
+    flex: 1;
+}
+
+.then-vs-today-cards img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.then-vs-today-cards p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#reunion-section {
+    background: var(--color-yellow);
+    color: var(--color-near-black);
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#reunion-section h2 {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+}
+
+#reunion-section p {
+    margin: 0 auto 40px;
+    max-width: 800px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+}
+
+#reunion-section .btn {
+    display: inline-block;
+    background: var(--color-gray-light);
+    color: var(--color-near-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+}
+
+#main-footer {
+    background: var(--color-gray-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 30px 40px;
+}
+
+#main-footer p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+#main-footer a {
+    color: var(--color-white);
+}

@@ -59,6 +59,5 @@
     #exercises li:not(:last-child)::after {
         content: " | ";
         color: rgb(10, 10, 10);
-
     }
 }
