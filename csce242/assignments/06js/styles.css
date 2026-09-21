@@ -1,7 +1,7 @@
 #content {
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: rgb(3, 57, 35);
+    background: rgb(17, 3, 57);
     color: white;
 }
 
@@ -21,7 +21,7 @@
 
 #exercise-content {
     text-align: center;
-    background: rgb(88, 112, 88);
+    background: rgb(88, 88, 112);
     padding: 20px;
     color: white;
 }
