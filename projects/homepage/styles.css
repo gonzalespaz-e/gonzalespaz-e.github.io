@@ -4,13 +4,19 @@
     --color-white: white;
     --color-off-white: #fbf9f9;
     --color-overlay-dark: rgba(9, 9, 9, 0.654);
-    --color-purple: #3b0a45;
+    --color-purple: #29092f;
     --color-dark-navy: #0e0e1a;
     --color-green: #2e5339;
     --color-yellow: #f6d381;
     --color-near-black: #111;
     --color-gray-light: #d9d9d9;
     --color-gray-dark: #262626;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -133,7 +139,7 @@ body {
 #discover-section {
     background: var(--color-purple);
     color: var(--color-white);
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 
 #discover-section .columns {
@@ -144,24 +150,27 @@ body {
 #discover-section img {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 20px;
 }
 
 #discover-section h1 {
     margin: 0;
+    max-width: 650px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.6em;
+    line-height: 1.3;
 }
 
 #then-vs-today {
     background: var(--color-dark-navy);
     color: var(--color-white);
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 
 #then-vs-today h2 {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.2em;
@@ -180,6 +189,10 @@ body {
 .then-vs-today-cards .card {
     position: relative;
     flex: 1;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease;
 }
 
 .then-vs-today-cards img {
@@ -190,13 +203,18 @@ body {
     border-radius: 12px;
 }
 
+
 .then-vs-today-cards p {
     position: absolute;
+    z-index: 1;
     bottom: 15px;
     left: 15px;
+    right: 15px;
     margin: 0;
+    color: var(--color-white);
     font-weight: bold;
     text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 #reunion-section {
@@ -248,4 +266,82 @@ body {
 
 #main-footer a {
     color: var(--color-white);
+}
+
+@media(max-width: 1099px) {
+    #hero {
+        height: 260px;
+    }
+
+    .hero-arrow {
+        font-size: 1.4em;
+    }
+
+    .hero-caption {
+        width: 100%;
+        padding: 16px 20px;
+    }
+
+    .hero-caption p {
+        font-size: 0.95em;
+        line-height: 1.3;
+    }
+
+    #discover-section,
+    #then-vs-today,
+    #reunion-section {
+        padding: 30px 20px;
+    }
+
+    #discover-section img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #discover-section h1 {
+        font-size: 1.3em;
+    }
+
+    #then-vs-today h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .then-vs-today-cards {
+        gap: 16px;
+    }
+
+    .then-vs-today-cards .card {
+        margin-bottom: 4px;
+    }
+
+    .then-vs-today-cards img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .then-vs-today-cards p {
+        font-size: 0.85em;
+    }
+
+    #reunion-section h2 {
+        font-size: 1.7em;
+    }
+
+    #reunion-section p {
+        font-size: 1em;
+        margin-bottom: 24px;
+    }
+
+    #reunion-section .btn {
+        width: 100%;
+    }
+
+    #main-footer {
+        padding: 24px 20px;
+    }
+
+    #main-footer p {
+        font-size: 0.85em;
+    }
 }
