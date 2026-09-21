@@ -317,7 +317,6 @@ body {
 
     .then-vs-today-cards img {
         height: auto;
-        aspect-ratio: 4 / 3;
     }
 
     .then-vs-today-cards p {
