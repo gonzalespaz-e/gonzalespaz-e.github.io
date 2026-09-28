@@ -29,7 +29,7 @@ const createCar = (color, top, left) => {
     document.getElementById("road").append(car);
 };
 
-// loop that places and makes a bunch of random cars on the road
+// loop start
 for (let i = 0; i < 10; i++) {
     const color = carColors[Math.floor(Math.random() * carColors.length)];
     const top = laneTops[Math.floor(Math.random() * laneTops.length)];
