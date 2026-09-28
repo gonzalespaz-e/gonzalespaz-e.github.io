@@ -1,0 +1,95 @@
+#content {
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(17, 3, 57);
+    color: white;
+}
+
+#main-header h1,
+#main-header h2 {
+    text-align: center;
+}
+
+#main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+#footer p {
+    text-align: center;
+    padding: 5px;
+}
+
+/* road css art */
+.road-scene {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+.grass {
+    height: 90px;
+    background: green;
+}
+
+.road {
+    position: relative;
+    height: 220px;
+    background: #2e2e2e;
+    overflow: hidden;
+}
+
+.road-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #eeeeee;
+}
+
+.line-top {
+    top: 12px;
+}
+
+.line-bottom {
+    bottom: 12px;
+}
+
+.lane-divider {
+    position: absolute;
+    top: 107px;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 4px dashed yellow;
+}
+
+.car {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.roof {
+    position: absolute;
+    top: -14px;
+    left: 12px;
+    width: 44px;
+    height: 16px;
+    background: lightblue;
+    border-radius: 4px;
+}
+
+.wheel {
+    position: absolute;
+    bottom: -8px;
+    width: 14px;
+    height: 14px;
+    background: black;
+    border-radius: 50%;
+}
