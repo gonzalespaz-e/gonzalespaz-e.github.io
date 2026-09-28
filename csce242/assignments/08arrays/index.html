@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- use this character set so i can easily utilize up and down triangles in my js-->
+    <meta charset="UTF-8">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Assignment 8</h1>
+            <h2>Arrays</h2>
+        </header>
+
+        <main>
+            <div id="main-content">
+                <div>
+                    <p>Pick Your Destination Type</p>
+                    <select id="destination-select" name="travel-types">
+                        <option value="" selected disabled>-- Select --</option>
+                        <option value="Mountains">Mountains</option>
+                        <option value="Beaches">Beaches</option>
+                    </select>
+                    <ul id="destination-list">
+                    </ul>
+                    <iframe id="map-frame" class="hidden" width="400" height="300" frameborder="0"></iframe>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <p>emmanuelpaz.com</p>
+        </footer>
+    </div>
+    <script src="scripts/arrays.js"></script>
+</body>
+
+</html>
