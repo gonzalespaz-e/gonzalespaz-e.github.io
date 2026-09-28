@@ -10,8 +10,16 @@
     text-align: center;
 }
 
+#main-header h2 {
+    color: bisque;
+}
+
 #main-content {
     text-align: center;
+}
+
+#main-content p {
+    color: blanchedalmond;
 }
 
 #destination-list {
