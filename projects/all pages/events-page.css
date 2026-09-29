@@ -211,6 +211,53 @@ body {
     font-size: 1.2em;
 }
 
+#member-popup {
+    display: none;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+#member-popup:target {
+    display: block;
+}
+
+.popup-box {
+    background: var(--color-teal-gray);
+    color: var(--color-white);
+    padding: 40px;
+    text-align: center;
+}
+
+.popup-box h2 {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.popup-box input {
+    padding: 6px;
+    border: none;
+    background: var(--color-navy-light);
+    color: var(--color-white);
+}
+
+.popup-box a {
+    color: var(--color-white);
+}
+
+.popup-submit {
+    background: var(--color-white);
+    color: var(--color-near-black);
+    border: none;
+    padding: 12px 40px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 #main-footer {
     background: var(--color-gray-dark);
     color: var(--color-white);
