@@ -2,11 +2,9 @@
     --color-navy: #1B222E;
     --color-navy-light: #35435a;
     --color-white: white;
-    --color-near-black: #111;
+    --color-off-white: #fdf7e9;
     --color-gray-dark: #262626;
-    --color-terracotta: #b06a4a;
-    --color-steel-blue: #2c4a63;
-    --color-teal-gray: #4a6b6b;
+    --color-purple: #453163;
     --font-display: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
 }
@@ -106,130 +104,69 @@ body {
         align-items: center;
         margin: 0 40px 0 0;
     }
+
+    .church-card {
+        width: 30%;
+    }
 }
 
-#events-section {
-    background: var(--color-near-black);
-    align-items: start;
-    justify-content: space-between;
-    gap: 40px;
+#churches-section {
+    background: var(--color-off-white);
     padding: 40px;
 }
 
-#photo-side {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 30%;
-}
-
-.photo-panel img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-#button-side {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-#events-box {
-    background: var(--color-terracotta);
+#churches-title {
+    background: var(--color-purple);
     color: var(--color-white);
-    padding: 40px;
+    text-align: center;
+    padding: 30px 40px;
+    margin-bottom: 50px;
 }
 
-#events-box h1 {
+#churches-title h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 2.6em;
+}
+
+.church-cards {
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.church-card {
+    background: var(--color-navy);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.church-card h2 {
     margin: 0 0 20px;
     text-transform: uppercase;
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 2.4em;
-}
-
-#events-box p {
-    margin: 0;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-#events-quote p {
+    font-size: 1.5em;
     color: var(--color-white);
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2em;
-    margin: 0;
 }
 
-.event-listing {
-    background: var(--color-navy-light);
-    color: var(--color-white);
-    padding: 24px;
-}
-
-.event-listing h3 {
-    margin: 0 0 12px;
-    font-family: var(--font-display);
-    font-size: 1.3em;
-}
-
-.event-listing p {
-    margin: 0;
-}
-
-.event-listing a {
-    text-decoration: underline;
-    color: var(--color-white);
-    font-family: var(--font-display);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-.bottom-btns {
-    background: var(--color-steel-blue);
-}
-
-.bottom-btns p {
-    margin: 0;
-}
-
-.bottom-btns a {
+.church-card img {
     display: block;
-    padding: 24px;
-    text-align: center;
-    text-decoration: underline;
-    color: var(--color-white);
-    font-family: var(--font-display);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.2em;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 #main-footer {
     background: var(--color-gray-dark);
     color: var(--color-white);
     text-align: center;
-}
-
-#blue-foot {
-    background: var(--color-teal-gray);
-    margin: 0;
-    padding: 20px 40px;
-}
-
-#blue-foot a {
-    color: var(--color-white);
-}
-
-#org-info {
-    margin: 0;
     padding: 8px 40px;
+}
+
+#main-footer p {
+    margin: 0;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.7em;
@@ -241,21 +178,28 @@ body {
 }
 
 @media(max-width: 1099px) {
-    #events-section {
-        flex-direction: column;
+    #churches-section {
         padding: 24px 20px;
-        gap: 24px;
     }
 
-    #events-box {
-        padding: 28px 24px;
+    #churches-title {
+        padding: 24px 20px;
+        margin-bottom: 30px;
     }
 
-    #events-box h1 {
+    #churches-title h1 {
         font-size: 1.8em;
     }
 
-    #org-info {
+    .church-card {
+        margin-bottom: 24px;
+    }
+
+    #main-footer {
+        padding: 24px 20px;
+    }
+
+    #main-footer p {
         font-size: 0.85em;
     }
 }
