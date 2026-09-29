@@ -4,6 +4,11 @@
     --color-white: white;
     --color-off-white: #fdf7e9;
     --color-gray-dark: #262626;
+    --color-dark-green: rgb(2, 32, 2);
+    --color-terracotta: #b06a4a;
+    --color-purple: #4a3a5a;
+    --color-dark-red: #670c0c;
+    --color-forest-green: #03501e;
     --font-display: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
 }
@@ -138,7 +143,7 @@ body {
 }
 
 #desc-card {
-    background: rgb(2, 32, 2);
+    background: var(--color-dark-green);
     color: white;
     width: 100%;
     padding: 50px 55px;
@@ -190,7 +195,7 @@ body {
 }
 
 #church-bg {
-    background: #b06a4a;
+    background: var(--color-terracotta);
     color: white;
     padding: 26px 30px;
     font-size: 1.05em;
@@ -208,7 +213,7 @@ body {
 }
 
 #education-bg {
-    background: #4a3a5a;
+    background: var(--color-purple);
     color: white;
     padding: 26px 30px;
     font-size: 1.05em;
@@ -217,7 +222,7 @@ body {
 }
 
 #one-today-bg {
-    background: #670c0c;
+    background: var(--color-dark-red);
     color: white;
     padding: 26px 30px;
     font-size: 1.05em;
@@ -226,7 +231,7 @@ body {
 }
 
 #community-bg {
-    background: #03501e;
+    background: var(--color-forest-green);
     color: white;
     padding: 26px 30px;
     font-size: 1.05em;

@@ -5,6 +5,7 @@
     --color-off-white: #fdf7e9;
     --color-gray-dark: #262626;
     --color-purple: #453163;
+    --color-teal-dark: #2e4a46;
     --font-display: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
 }
@@ -137,9 +138,11 @@ body {
 }
 
 .church-card {
+    display: block;
     background: var(--color-navy);
     padding: 20px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .church-card h2 {
@@ -156,6 +159,61 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+#church-preview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+#church-preview:target {
+    display: flex;
+}
+
+.preview-box {
+    background: var(--color-teal-dark);
+    color: var(--color-white);
+    width: 90%;
+    max-width: 550px;
+    padding: 40px;
+    text-align: center;
+}
+
+.preview-box h2 {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.preview-slide {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.preview-arrow {
+    font-size: 1.8em;
+    color: var(--color-white);
+}
+
+.preview-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.preview-box a {
+    color: var(--color-white);
 }
 
 #main-footer {

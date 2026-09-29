@@ -158,18 +158,26 @@ body {
     line-height: 1.6;
 }
 
+#buttons-gap {
+    margin-top: 100px;
+    margin: auto;
+}
+
 #events-quote p {
     color: var(--color-white);
     text-align: center;
     font-style: italic;
     font-size: 1.2em;
     margin: 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .event-listing {
     background: var(--color-navy-light);
     color: var(--color-white);
     padding: 24px;
+    margin-bottom: 100px;
 }
 
 .event-listing h3 {
@@ -289,9 +297,17 @@ body {
 
 @media(max-width: 1099px) {
     #events-section {
-        flex-direction: column;
+        display: block;
         padding: 24px 20px;
-        gap: 24px;
+    }
+
+    #photo-side {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #button-side {
+        width: 100%;
     }
 
     #events-box {
