@@ -147,11 +147,11 @@ body {
     top: 700px;
     left: 50%;
     width: 260px;
-    scale: 1.3;
+    scale: 1.45;
 }
 
 #blur-2 {
-    top: 100px;
+    top: 70px;
     left: 35%;
     width: 230px;
     scale: 2;
@@ -165,8 +165,8 @@ body {
 }
 
 #blur-4 {
-    top: 1200px;
-    left: 10%;
+    top: 1100px;
+    left: 20%;
     width: 340px;
     scale: 1.1;
 }
