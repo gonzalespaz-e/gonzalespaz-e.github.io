@@ -330,21 +330,23 @@ body {
     }
 
     #photograph-section {
-        padding: 24px 20px;
+        padding: 32px 20px 40px;
     }
 
     .bg-blur {
         position: static;
-        width: 100%;
+        width: 50%;
+        margin: 0 auto;
+        opacity: 0.25;
     }
 
     .photograph-inner {
         flex-direction: column;
-        gap: 32px;
+        gap: 44px;
     }
 
     .photo-col {
-        gap: 32px;
+        gap: 44px;
     }
 
     .photo-col-right {
@@ -366,17 +368,18 @@ body {
 
     #desc-card {
         width: 100%;
-        padding: 28px 26px;
+        padding: 30px 26px;
         font-size: 1.05em;
     }
 
     #desc-card .topic-card-title {
-        font-size: 1.8em;
+        font-size: 1.9em;
         margin-bottom: 16px;
     }
 
     .topic-card-title {
-        font-size: 1.5em;
+        font-size: 1.6em;
+        margin-bottom: 12px;
     }
 
     .topic-card img {
