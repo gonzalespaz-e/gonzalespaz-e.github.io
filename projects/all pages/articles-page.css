@@ -33,9 +33,11 @@ body {
     font-family: var(--font-display);
     text-align: center;
     font-size: 2em;
+    position: relative;
 }
 
 #main-header h1 {
+    margin: 0;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -63,12 +65,15 @@ body {
 
 #nav-toggle {
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     color: var(--color-white);
     font-size: 1.5em;
+    cursor: pointer;
     padding: 10px;
-    margin: 0 auto 10px;
 }
 
 #header-nav.hidden {
@@ -224,6 +229,12 @@ body {
 }
 
 @media(max-width: 1099px) {
+    #main-header {
+        text-align: left;
+        padding: 15px 60px 15px 20px;
+        box-sizing: border-box;
+    }
+
     #articles-section {
         padding: 24px 20px;
     }

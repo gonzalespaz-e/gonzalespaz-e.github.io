@@ -4,10 +4,13 @@
     --color-white: white;
     --color-off-white: #fdf7e9;
     --color-gray-dark: #262626;
-    --color-purple: #453163;
-    --color-teal-dark: #2e4a46;
+    --color-steel-blue: #2c4a63;
+    --color-coral: #e2604c;
+    --color-near-black: #111;
+    --color-gray-light: #d9d9d9;
     --font-display: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
 }
 
 body {
@@ -51,6 +54,11 @@ body {
     font-weight: 400;
     font-size: 0.7em;
     margin: 40px;
+}
+
+#header-nav a.active {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 #header-nav li {
@@ -114,115 +122,96 @@ body {
         align-items: center;
         margin: 0 40px 0 0;
     }
-
-    .church-card {
-        width: 30%;
-    }
 }
 
-#churches-section {
+#articles-section {
     background: var(--color-off-white);
-    padding: 40px;
+    padding: 45px;
 }
 
-#churches-title {
-    background: var(--color-purple);
+#article-title {
+    background: var(--color-steel-blue);
     color: var(--color-white);
     text-align: center;
-    padding: 30px 40px;
-    margin-bottom: 50px;
+    padding: 35px 40px;
+    margin-bottom: 60px;
 }
 
-#churches-title h1 {
-    margin: 0;
+#article-title h1 {
+    margin: 0 0 12px;
     text-transform: uppercase;
     font-family: var(--font-display);
     font-weight: 700;
     font-size: 2.6em;
 }
 
-.church-cards {
-    flex-wrap: wrap;
-    gap: 40px;
+#article-title h3 {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1em;
 }
 
-.church-card {
-    display: block;
-    background: var(--color-navy);
-    padding: 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-.church-card h2 {
-    margin: 0 0 20px;
+#featured-article h3:first-child {
     text-transform: uppercase;
     font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.5em;
-    color: var(--color-white);
+    font-weight: 600;
+    color: var(--color-coral);
+    margin: 0 0 10px;
 }
 
-.church-card img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-#church-preview {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    justify-content: center;
-}
-
-#church-preview:target {
-    display: flex;
-}
-
-.preview-box {
-    background: var(--color-teal-dark);
-    color: var(--color-white);
-    width: 90%;
-    max-width: 550px;
-    padding: 40px;
-    text-align: center;
-}
-
-.preview-box h2 {
-    margin: 0 0 20px;
+.article-block h3:first-child {
     text-transform: uppercase;
     font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--color-navy);
+    margin: 0 0 10px;
+}
+
+.article-title {
+    font-family: var(--font-serif);
+    font-style: italic;
     font-weight: 700;
-    font-size: 1.6em;
+    color: var(--color-near-black);
+    margin: 0 0 8px;
 }
 
-.preview-slide {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.preview-arrow {
+#featured-article .article-title {
     font-size: 1.8em;
-    color: var(--color-white);
 }
 
-.preview-slide img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.article-block .article-title {
+    font-size: 1.5em;
 }
 
-.preview-box a {
-    color: var(--color-white);
+#featured-article h4 {
+    font-family: var(--font-serif);
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 20px;
+}
+
+#featured-article p,
+.article-block p {
+    font-family: var(--font-serif);
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    max-width: 700px;
+}
+
+#featured-article a,
+.article-block a {
+    font-family: var(--font-serif);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-near-black);
+}
+
+.article-block {
+    padding-top: 45px;
+    margin-top: 45px;
+    border-top: 1px solid var(--color-gray-light);
 }
 
 #main-footer {
@@ -251,21 +240,25 @@ body {
         box-sizing: border-box;
     }
 
-    #churches-section {
+    #articles-section {
         padding: 24px 20px;
     }
 
-    #churches-title {
+    #article-title {
         padding: 24px 20px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
-    #churches-title h1 {
+    #article-title h1 {
         font-size: 1.8em;
     }
 
-    .church-card {
-        margin-bottom: 24px;
+    #featured-article .article-title {
+        font-size: 1.4em;
+    }
+
+    .article-block .article-title {
+        font-size: 1.2em;
     }
 
     #main-footer {

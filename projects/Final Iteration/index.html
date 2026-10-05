@@ -18,7 +18,7 @@
             <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
             <nav id="header-nav" class="columns hidden">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="photographs.html">Photos</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="articles.html">Articles</a></li>
@@ -27,7 +27,12 @@
         </header>
         <main>
             <section id="hero">
-                <button class="hero-arrow hero-arrow-left">&lt;</button>
+                <div id="slides">
+                    <img src="images/img1.jpg">
+                    <img src="images/Unknown.png" id="light-slide" class="hidden">
+                    <img src="images/3_0.jpg" class="hidden">
+                </div>
+                <button id="hero-arrow-left" class="hero-arrow hero-arrow-left">&lt;</button>
                 <button id="hero-arrow-right" class="hero-arrow hero-arrow-right">&gt;</button>
                 <div class="hero-caption">
                     <p>Learn about the rich history of the community, view old photographs, catch up with the
@@ -83,6 +88,7 @@
         </footer>
     </div>
     <script src="nav.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 
 </html>

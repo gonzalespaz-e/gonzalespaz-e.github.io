@@ -63,6 +63,11 @@ body {
     font-weight: 700;
 }
 
+#header-nav a.active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 #header-nav li {
     list-style-type: none;
     padding: 20px;
@@ -130,8 +135,17 @@ body {
 #hero {
     position: relative;
     height: 600px;
-    background: url("images/img1.jpg") center / cover no-repeat;
+}
 
+#slides img {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+#slides .hidden {
+    display: none;
 }
 
 .hero-arrow {
@@ -142,6 +156,10 @@ body {
     color: var(--color-white);
     font-size: 2em;
     cursor: pointer;
+}
+
+.dark-arrow {
+    color: var(--color-near-black);
 }
 
 .hero-arrow-left {
@@ -331,6 +349,10 @@ body {
     }
 
     #hero {
+        height: 260px;
+    }
+
+    #slides img {
         height: 260px;
     }
 
