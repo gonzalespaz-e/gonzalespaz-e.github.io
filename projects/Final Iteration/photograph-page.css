@@ -144,27 +144,31 @@ body {
 }
 
 #blur-1 {
-    top: 180px;
-    left: 33%;
+    top: 700px;
+    left: 50%;
     width: 260px;
+    scale: 1.3;
 }
 
 #blur-2 {
-    top: 560px;
-    left: 45%;
+    top: 100px;
+    left: 35%;
     width: 230px;
+    scale: 2;
 }
 
 #blur-3 {
-    top: 1150px;
-    left: 40%;
+    top: 1600px;
+    left: 30%;
     width: 220px;
+    scale: 1.2;
 }
 
 #blur-4 {
-    top: 1560px;
+    top: 1200px;
     left: 10%;
     width: 340px;
+    scale: 1.1;
 }
 
 .photograph-inner {
