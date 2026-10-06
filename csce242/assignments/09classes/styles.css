@@ -1,8 +1,18 @@
+body {
+    margin: 0;
+    background: rgb(17, 3, 57);
+}
+
 #content {
     margin: auto;
+    min-height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(17, 3, 57);
     color: white;
+}
+
+#main-header {
+    padding: 10px 0;
 }
 
 #main-header h1,
