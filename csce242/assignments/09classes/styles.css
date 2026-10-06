@@ -1,0 +1,110 @@
+#content {
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(17, 3, 57);
+    color: white;
+}
+
+#main-header h1,
+#main-header h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+#main-header h2 {
+    color: bisque;
+}
+
+#main-content {
+    text-align: center;
+}
+
+/* one column on phones, grows with the screen */
+#vacation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.vacation-card {
+    background: rgb(28, 10, 80);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-header {
+    padding: 8px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.card-label {
+    margin: 4px 0 0 0;
+    font-size: 0.75em;
+    color: blanchedalmond;
+}
+
+/* keep every photo the same shape no matter the original size */
+.vacation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* map stacks above the text until there is room for two columns */
+.modal-columns {
+    display: block;
+}
+
+.modal-map {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+.modal-details {
+    padding-top: 10px;
+}
+
+#footer p {
+    text-align: center;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(min-width: 700px) {
+    #vacation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal-columns {
+        display: flex;
+        gap: 20px;
+    }
+
+    .modal-map,
+    .modal-details {
+        flex: 1;
+    }
+
+    .modal-details {
+        padding-top: 0;
+    }
+}
+
+@media(min-width: 1100px) {
+    #vacation-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Vacations</h1>
+            <h2>Vacation Experiences</h2>
+        </header>
+        <main>
+            <div id="main-content">
+                <div id="vacation-grid"></div>
+            </div>
+        </main>
+        <footer id="footer">
+            <p>emmanuelpaz.com</p>
+        </footer>
+    </div>
+
+    <!-- w3schools modal, filled in by classes2.js when a card is clicked -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container">
+                <span id="modal-close" class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container w3-padding modal-columns">
+                <iframe id="modal-map" class="modal-map" frameborder="0"></iframe>
+                <div class="modal-details">
+                    <h2 id="modal-title"></h2>
+                    <p><b>Type:</b> <span id="modal-type"></span></p>
+                    <p><b>Description:</b> <span id="modal-description"></span></p>
+                    <p><b>Things To Do:</b> <span id="modal-things"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/classes2.js"></script>
+</body>
+
+</html>
