@@ -1,3 +1,4 @@
+// containing class for all vacation attributes etc.
 class Vacation {
     constructor(title, type, description, thingsToDo, image, mapSrc) {
         this.title = title;
@@ -11,26 +12,25 @@ class Vacation {
     getLabel() {
         return this.type + " Vacation";
     }
+    // helper 
+    makeElement(tag, className, html) {
+        const el = document.createElement(tag);
+        el.className = className;
+        el.innerHTML = html;
+        return el;
+    }
+
     getCard() {
-        const card = document.createElement("div");
-        card.className = "vacation-card";
+        const card = this.makeElement("div", "vacation-card", "");
+        const header = this.makeElement("div", "card-header", "");
 
-        const header = document.createElement("div");
-        header.className = "card-header";
-
-        const title = document.createElement("h3");
-        title.innerHTML = this.title;
-
-        const label = document.createElement("p");
-        label.className = "card-label";
-        label.innerHTML = this.getLabel();
+        header.append(this.makeElement("h3", "", this.title));
+        header.append(this.makeElement("p", "card-label", this.getLabel()));
 
         const img = document.createElement("img");
         img.src = this.image;
         img.alt = this.title + " - " + this.getLabel();
 
-        header.append(title);
-        header.append(label);
         card.append(header);
         card.append(img);
 
@@ -117,11 +117,11 @@ const showModal = (vacation) => {
     document.getElementById("modal-description").innerHTML = vacation.description;
     document.getElementById("modal-things").innerHTML = vacation.thingsToDo;
 
-    document.getElementById("modal").style.display = "block";
+    document.getElementById("modal").classList.remove("hidden");
 };
 
 const hideModal = () => {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal").classList.add("hidden");
     document.getElementById("modal-map").src = "";
 };
 
