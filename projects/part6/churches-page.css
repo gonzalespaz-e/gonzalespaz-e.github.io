@@ -37,6 +37,7 @@ body {
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 #main-header h1 a {
@@ -50,7 +51,7 @@ body {
     font-family: var(--font-body);
     font-weight: 400;
     font-size: 0.7em;
-    margin: 40px;
+    margin: 20px;
 }
 
 #header-nav a.active {

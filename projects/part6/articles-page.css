@@ -40,6 +40,7 @@ body {
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 #main-header h1 a {
@@ -53,7 +54,7 @@ body {
     font-family: var(--font-body);
     font-weight: 400;
     font-size: 0.7em;
-    margin: 40px;
+    margin: 20px;
 }
 
 #header-nav a.active {
@@ -152,7 +153,28 @@ body {
     font-size: 1em;
 }
 
-#featured-article h3:first-child {
+.article-block {
+    gap: 30px;
+    align-items: start;
+    padding-top: 45px;
+    margin-top: 45px;
+    border-top: 1px solid var(--color-gray-light);
+}
+
+.article-image {
+    display: block;
+    width: 35%;
+    height: 230px;
+    object-fit: cover;
+    border: 1px solid var(--color-gray-light);
+    box-sizing: border-box;
+}
+
+.article-text {
+    width: 65%;
+}
+
+.article-kicker {
     text-transform: uppercase;
     font-family: var(--font-display);
     font-weight: 600;
@@ -160,39 +182,23 @@ body {
     margin: 0 0 10px;
 }
 
-.article-block h3:first-child {
-    text-transform: uppercase;
-    font-family: var(--font-display);
-    font-weight: 600;
-    color: var(--color-navy);
-    margin: 0 0 10px;
-}
-
 .article-title {
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: 700;
+    font-size: 1.5em;
     color: var(--color-near-black);
     margin: 0 0 8px;
 }
 
-#featured-article .article-title {
-    font-size: 1.8em;
-}
-
-.article-block .article-title {
-    font-size: 1.5em;
-}
-
-#featured-article h4 {
+.article-byline {
     font-family: var(--font-serif);
     font-weight: normal;
-    font-style: normal;
-    margin: 0 0 20px;
+    font-size: 0.95em;
+    margin: 0 0 16px;
 }
 
-#featured-article p,
-.article-block p {
+.article-summary {
     font-family: var(--font-serif);
     font-size: 1.1em;
     line-height: 1.6;
@@ -200,18 +206,11 @@ body {
     max-width: 700px;
 }
 
-#featured-article a,
-.article-block a {
+.article-link {
     font-family: var(--font-serif);
     font-weight: bold;
     text-transform: uppercase;
     color: var(--color-near-black);
-}
-
-.article-block {
-    padding-top: 45px;
-    margin-top: 45px;
-    border-top: 1px solid var(--color-gray-light);
 }
 
 #main-footer {
@@ -253,11 +252,22 @@ body {
         font-size: 1.8em;
     }
 
-    #featured-article .article-title {
-        font-size: 1.4em;
+    .article-block {
+        padding-top: 30px;
+        margin-top: 30px;
     }
 
-    .article-block .article-title {
+    .article-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    .article-text {
+        width: 100%;
+    }
+
+    .article-title {
         font-size: 1.2em;
     }
 
