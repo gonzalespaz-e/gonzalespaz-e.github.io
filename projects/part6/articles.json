@@ -1,0 +1,82 @@
+[
+    {
+        "_id": 1,
+        "title": "Narrative: Remembering Ward One in Columbia",
+        "author": "Laura Hunsberger",
+        "publisher": "South Carolina Public Radio",
+        "date": "2017-10-03",
+        "summary": "A StoryCorps interview recorded in Columbia in 2016 in which friends Mattie Anderson-Roberson and Richard Caughman remember growing up in Ward One in the 1940s and talk about preserving the neighborhood's history.",
+        "url": "https://www.southcarolinapublicradio.org/sc-features/2017-10-03/narrative-remembering-ward-one-in-columbia",
+        "img_name": "images/articles/1ETV-Remembering Ward One.png"
+    },
+    {
+        "_id": 2,
+        "title": "Honors College photo exhibit recalls former African-American community",
+        "author": "Page Ivey",
+        "publisher": "University of South Carolina",
+        "date": "2013-10-22",
+        "summary": "Honors College senior Sarah Koslov curated \"The Space On Which You Stand,\" a photo exhibit of residents of Columbia's historically Black Ward One neighborhood, which was cleared by urban renewal in the 1960s and 1970s.",
+        "url": "https://www.sc.edu/uofsc/posts/2013/photo_exhibit_recalls_african_american_community.php",
+        "img_name": "images/articles/2Honors College Photo Exhibit.png"
+    },
+    {
+        "_id": 3,
+        "title": "Ward One",
+        "author": "Sophie Kahler",
+        "publisher": "ArcGIS StoryMaps",
+        "date": "2021-04-09",
+        "summary": "Comprehensive Ward One ArcGIS story, detailing the history of the community, its boundary, and the relevant Urban Renewal plan that incited its displacement and destruction.",
+        "url": "https://storymaps.arcgis.com/stories/dbe13f1e08b345b1b4f02cba73d01fe4",
+        "img_name": "images/articles/3WardOne ArcGIS.png"
+    },
+    {
+        "_id": 4,
+        "title": "Ward One Columbia",
+        "author": "Ward One Organization",
+        "publisher": "Ward One Organization 501(c)(3)",
+        "date": "2013",
+        "summary": "The organization's original website, documenting the Ward One community through sections on residents, education, churches and old photographs, alongside events, a scholarship program and oral histories.",
+        "url": "https://wardone.wixsite.com/wardone",
+        "img_name": "images/articles/4WardOne-Original Site.png"
+    },
+    {
+        "_id": 5,
+        "title": "A Look Inside Palmetto Compress Building",
+        "author": "wltx",
+        "publisher": "WLTX News 19",
+        "date": "2016-04-01",
+        "summary": "The Palmetto Compress building gets ready for apartments.",
+        "url": "https://www.wltx.com/video/news/a-look-inside-palmetto-compress-building/101-2136890",
+        "img_name": "images/articles/5WLTX Palmetto Compress Article.png"
+    },
+    {
+        "_id": 6,
+        "title": "Black Columbia residents reconnect 55 years after being displaced",
+        "author": "Win Hammond",
+        "publisher": "Carolina News & Reporter",
+        "date": "2023-12-06",
+        "summary": "Residents of Ward One were displaced in 1968 to make way for University of South Carolina development. Former residents founded the Ward One organization in 1992, which still holds reunions and works to preserve the community's history.",
+        "url": "https://carolinanewsandreporter.cic.sc.edu/black-columbia-residents-reconnect-55-years-after-being-displaced/",
+        "img_name": "images/articles/6Carolina News and Reporter.png"
+    },
+    {
+        "_id": 7,
+        "title": "And Lest We Forget: Remembering Ward One",
+        "author": "Ashley N. Bouknight",
+        "publisher": "ashleybouknight.com",
+        "date": "2011",
+        "summary": "Bouknight describes her 2010 exhibition at the University of South Carolina's South Caroliniana Library, drawn from her thesis on the 1960s urban renewal project that displaced the African-American Ward One community.",
+        "url": "https://ashleybouknight.com/and-lest-we-forget-remembering-ward-one/",
+        "img_name": "images/articles/7Lest We Forget Article.png"
+    },
+    {
+        "_id": 8,
+        "title": "Remembering the Days: South by southwest, the university's expansion into Ward 1, Wheeler Hill",
+        "author": "Chris Horn",
+        "publisher": "University of South Carolina",
+        "date": "2021-10-14",
+        "summary": "Episode 34 of the Remembering the Days podcast traces how the university expanded into the Wheeler Hill and Ward One neighborhoods in the 1960s through urban renewal, covering the loss of Booker T. Washington High School and efforts to document those communities.",
+        "url": "https://sc.edu/uofsc/posts/2021/10/remembering_the_days_south_by_southwest_episode_34.php",
+        "img_name": "images/articles/8USC_Podcast_Ward One Article.png"
+    }
+]
